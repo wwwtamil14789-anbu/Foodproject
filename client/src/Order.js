@@ -176,11 +176,12 @@ const Order = () => {
                         <option value="12:00 PM" className="bg-dark text-light">12:00 PM (Lunch)</option>
                         <option value="1:00 PM" className="bg-dark text-light">1:00 PM (Lunch)</option>
                         <option value="2:00 PM" className="bg-dark text-light">2:00 PM (Lunch)</option>
-                        <option value="5:00 PM" className="bg-dark text-light">5:00 PM (Dinner)</option>
-                        <option value="6:00 PM" className="bg-dark text-light">6:00 PM (Dinner)</option>
-                        <option value="7:00 PM" className="bg-dark text-light">7:00 PM (Dinner)</option>
+                        <option value="4:00 PM" className="bg-dark text-light">4:00 PM (Afternoon)</option>
+                        <option value="5:00 PM" className="bg-dark text-light">5:00 PM (Afternoon)</option>
+                        <option value="6:00 PM" className="bg-dark text-light">6:00 PM (Afternoon)</option>
                         <option value="8:00 PM" className="bg-dark text-light">8:00 PM (Dinner)</option>
                         <option value="9:00 PM" className="bg-dark text-light">9:00 PM (Dinner)</option>
+                        <option value="10:00 PM" className="bg-dark text-light">10:00 PM (Dinner)</option>
                       </select>
                       {formik.touched.time && formik.errors.time ? (
                         <div className="invalid-feedback px-3">{formik.errors.time}</div>

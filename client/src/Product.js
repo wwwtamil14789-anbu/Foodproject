@@ -9,56 +9,56 @@ const Product = () => {
     {
       id: 1,
       name: "Gourmet Truffle Burger",
-      price: "$18.99",
+      price: "$ 18.99",
       image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&q=80&w=600",
       category: "Burgers"
     },
     {
       id: 2,
       name: "Wild Mushroom Pizza",
-      price: "$22.50",
+      price: "$ 22.50",
       image: "https://images.ctfassets.net/trvmqu12jq2l/5aAbJvULvvgV9pkCJ38Ygn/1438fc7b06946a3d93153f1f4af1a868/CxBlog-DD-Miami-Pizza-IronsideKitchen.jpg?q=70&w=1208",
       category: "Pizza"
     },
     {
       id: 3,
       name: "Aged Ribeye Steak",
-      price: "$34.99",
+      price: "$ 34.99",
       image: "https://images.unsplash.com/photo-1546241072-48010ad2862c?auto=format&fit=crop&q=80&w=600",
       category: "Steaks"
     },
     {
       id: 4,
       name: "Lobster Ravioli",
-      price: "$28.00",
+      price: "$ 28.00",
       image: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&q=80&w=600",
       category: "Pasta"
     },
     {
       id: 5,
       name: "Atlantic Salmon",
-      price: "$26.50",
+      price: "$ 26.50",
       image: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&q=80&w=600",
       category: "Seafood"
     },
     {
       id: 6,
       name: "Quinoa Buddha Bowl",
-      price: "$16.00",
+      price: "$ 16.00",
       image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=600",
       category: "Vegetarian"
     },
     {
       id: 7,
       name: "Tandoori Chicken",
-      price: "$19.99",
+      price: "$ 19.99",
       image: "https://images.unsplash.com/photo-1610057099443-fde8c4d50f91?auto=format&fit=crop&q=80&w=600",
       category: "Main Course"
     },
     {
       id: 8,
       name: "Artisan Sushi Set",
-      price: "$32.00",
+      price: "$ 32.00",
       image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&q=80&w=600",
       category: "Sushi"
     }
