@@ -17,12 +17,12 @@ const MONGODB_URI = process.env.MONGODB_URI ||
 "mongodb+srv://rose:rose@cluster0.bugc4ez.mongodb.net/food_shop?retryWrites=true&w=majority";
 
 mongoose.connect(MONGODB_URI)
-  .then(() => console.log("✅ MongoDB connected"))
-  .catch(err => console.log("❌ Error:", err));
+  .then(() => console.log("MongoDB connected"))
+  .catch(err => console.log("Error:", err));
 
 /* ================= ROUTES ================= */
 
-// 👉 Get all foods
+// Get all foods
 app.get('/api/products', async (req, res) => {
   try {
     const foods = await Food.find();
@@ -32,7 +32,7 @@ app.get('/api/products', async (req, res) => {
   }
 });
 
-// 👉 Add food
+// Add food
 app.post('/api/products', async (req, res) => {
   try {
     const { name, price, image, category } = req.body;
@@ -50,7 +50,7 @@ app.post('/api/products', async (req, res) => {
   }
 });
 
-// 👉 Update food
+// Update food
 app.put('/api/products/:id', async (req, res) => {
   try {
     const updated = await Food.findByIdAndUpdate(
@@ -65,7 +65,7 @@ app.put('/api/products/:id', async (req, res) => {
   }
 });
 
-// 👉 Delete food
+//  Delete food
 app.delete('/api/products/:id', async (req, res) => {
   try {
     await Food.findByIdAndDelete(req.params.id);
@@ -75,7 +75,7 @@ app.delete('/api/products/:id', async (req, res) => {
   }
 });
 
-// 👉 Seed data
+//  Seed data
 app.post('/api/products/seed', async (req, res) => {
   try {
     await Food.deleteMany();
@@ -101,7 +101,7 @@ app.post('/api/products/seed', async (req, res) => {
   }
 });
 
-// 👉 Create booking
+//  Create booking
 app.post('/api/bookings', async (req, res) => {
   try {
     const { name, email, phone, guests, date, time, specialRequest } = req.body;
@@ -130,5 +130,5 @@ app.post('/api/bookings', async (req, res) => {
 /* ================= SERVER ================= */
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(` Server running on http://localhost:${PORT}`);
 });
