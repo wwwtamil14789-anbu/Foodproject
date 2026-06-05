@@ -225,7 +225,7 @@ const Order = () => {
           <div className="row justify-content-center">
             <div className="col-lg-6 animate-fade-up">
               <div className="glass-card p-5 text-center shadow-lg border-warning">
-                <div className="display-1 text-warning mb-4">🍽️</div>
+                <div className="display-1 text-warning mb-4"></div>
                 <h2 className="mb-3 glow-text text-uppercase fw-bold">Table Confirmed!</h2>
                 <h4 className="text-light mb-4">Thank you, {bookingDetails?.name}!</h4>
                 <p className="text-muted mb-5 leading-relaxed">
